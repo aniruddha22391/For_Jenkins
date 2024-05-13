@@ -51,7 +51,8 @@ pipeline {
                      emailext (
                          to: 's223914256@deakin.edu.au',
                          subject: 'Deployment Successful',
-                         body: 'The deployment was successful. Please verify.'
+                         body: 'The deployment was successful. Please verify.',
+                         attachmentsPattern:'**/*.log'
                      )
                  }
              }
